@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu Mẫu Đăng Ký Môn Thi Tốt Nghiệp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="date"], input[type="number"], input[type="email"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .button-container {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Đăng Ký Thi Tốt Nghiệp</h2>
+
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="fullname">Họ và Tên:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Nhập họ và tên học sinh">
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Ngày Sinh:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cccd">Số CCCD:</label>
+            <input type="number" id="cccd" name="cccd" required placeholder="Nhập số CCCD">
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Giới Tính:</label>
+            <input type="radio" id="male" name="gender" value="Nam" required>
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label>
+        </div>
+
+        <div class="form-group">
+            <label for="group">Tổ Hợp Môn:</label>
+            <select id="group" name="group" required>
+                <option value="">Chọn tổ hợp môn</option>
+                <option value="A00">A00: Toán, Lý, Hóa</option>
+                <option value="A01">A01: Toán, Lý, Anh</option>
+                <option value="B00">B00: Toán, Hóa, Sinh</option>
+                <option value="C00">C00: Văn, Sử, Địa</option>
+                <option value="D01">D01: Toán, Văn, Anh</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Địa Chỉ Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Nhập địa chỉ email">
+        </div>
+
+        <div class="button-container">
+            <button type="submit">Đăng Ký</button>
+        </div>
+    </form>
+
+</body>
+</html>
