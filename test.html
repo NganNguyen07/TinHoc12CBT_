@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Background Hình Ảnh</title>
+        <style>
+            body {
+                background-image: url('images/1.jpg'); /* Đường dẫn tới hình ảnh */
+                background-size: cover; /* Phóng to/thu nhỏ hình ảnh sao cho phủ đầy toàn bộ trang */
+                background-position: center center; /* Canh giữa hình ảnh */
+                background-attachment: fixed; /* Cố định hình nền khi cuộn trang */
+            }
+        </style>
+    </head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch Hoạt Động Các Câu Lạc Bộ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #000000;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #6ce7fa;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .total {
+            font-weight: bold;
+            background-color: #ed73cb;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="header">Kho tài liệu Tin 12</h2>
+    <h2 class="header"><i>Kết Nối Tri Thức Với Cuộc Sống</i></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Bài </th>
+                <th>Tên bài</th>
+                <th>Tại đây</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> 7 </td>
+                <td>HTML và cấu trúc trang web </td>
+                <td><a href="https://www.facebook.com/profile.php?id=100065761179305" target="_blank"><i>Link đáp án </i></a></td>
+            </tr>
+            <tr>
+                <td> 8 </td>
+                <td>Định dạng văn bản </td>
+                <td><a href="https://www.facebook.com/profile.php?id=100065761179305" target="_blank"><i>Link đáp án </i></a></td>
+            </tr>
+            <tr>
+                <td> 9 </td>
+                <td>Tạo danh sách, bảng </td>
+                <td><a href="tin12/bai9.html" target="_blank"><i>Link đáp án </i></a></td>
+            </tr>
+            <tr>
+                <td> 10 </td>
+                <td>Tạo liên kết </td>
+                <td><a href="tin12/bai10.html" target="_blank"><i>Link đáp án </i></a></td>
+            </tr>
+            <tr>
+                <td> 11 </td>
+                <td>Chèn tệp tin đa phương tiện và khung nội tuyến vào trang web </td>
+                <td><a href="https://www.facebook.com/profile.php?id=100065761179305" target="_blank"><i>Link đáp án </i></a></td>
+            </tr>
+            <tr>
+                <td> 12 </td>
+                <td>Tạo biểu mẫu </td>
+                <td><a href="tin12/bai12.html" target="_blank"><i>Link đáp án </i></a></td>
+            </tr>
+            <tr>
+                <td> 13 </td>
+                <td>Khái niệm, vai trò của CSS</td>
+                <td><a href="https://www.facebook.com/profile.php?id=100065761179305" target="_blank"><i>Link đáp án </i></a></td>
+            </tr>
+            <tr>
+                <td> 14 </td>
+                <td>Định dạng văn bản bằng CSS </td>
+                <td><a href="https://www.facebook.com/profile.php?id=100065761179305" target="_blank"><i>Link đáp án </i></a></td>
+            </tr>
+            <tr>
+                <td> 15 </td>
+                <td>Tạo màu cho chữ và nền </td>
+                <td><a href="https://www.facebook.com/profile.php?id=100065761179305" target="_blank"><i>Link đáp án </i></a></td>
+            </tr>
+            <tr>
+                <td> 16 </td>
+                <td>Định dạng khung </td>
+                <td><a href="https://www.facebook.com/profile.php?id=100065761179305" target="_blank"><i>Link đáp án </i></a></td>
+            </tr>
+            <tr>
+                <td> 17 </td>
+                <td>Các mức ưu tiên của bộ chọn </td>
+                <td><a href="https://www.facebook.com/profile.php?id=100065761179305" target="_blank"><i>Link đáp án </i></a></td>
+            </tr>
+            <tr>
+                <td> 18 </td>
+                <td>Thực hành tổng hợp thiết kế trang web </td>
+                <td><a href="https://www.facebook.com/profile.php?id=100065761179305" target="_blank"><i>Link đáp án </i></a></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quay về Trang Chủ</title>
+        <style>
+            /* Thêm một số kiểu cho nút */
+            .home-button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                float: right ;
+            }
+    
+            .home-button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <button class="home-button" onclick="goHome()">Quay về trang chủ</button>
+    
+        <script>
+            // Hàm JavaScript để chuyển hướng về trang chủ
+            function goHome() {
+                window.location.href = '/'; // Trang chủ, nếu bạn đang sử dụng một trang tĩnh, thay '/' bằng URL cụ thể
+            }
+        </script>
+    
+    </body>
+</body>
+</html>
