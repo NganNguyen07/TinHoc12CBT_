@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thẻ Bài - 5 Thành Viên</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('');
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Thanh tiêu đề */
+  h1 {
+    width: 100%;
+    margin: 0;
+    padding: 15px 0;
+    background-color: #ff8a8a;
+    color: #2d0101;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Container của thẻ bài */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+  }
+
+  /* Thẻ bài */
+  .card {
+    width: 250px;
+    height: 350px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+
+  .card-inner.is-flipped {
+    transform: rotateY(180deg);
+  }
+
+  /* Mặt trước và mặt sau của thẻ bài */
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+  }
+
+  .card-front {
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-front img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .card-back {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 16px;
+  }
+
+  .card-back h3 {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .card-back p {
+    margin: 5px 0;
+  }
+
+  .card-back a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+
+  .card-back a:hover {
+    color: #0056b3;
+  }
+</style>
+</head>
+<h1> Giới thiệu thành viên nhóm 1-12TT</h1>
+<body>
+  <div class="card-container">
+    <!-- Thẻ bài 1 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/vl.jpg" alt="Ảnh Vĩnh Lạc">
+        </div>
+        <div class="card-back">
+          <h3>Viên Vĩnh Lạc</h3>
+          <p><strong>Nickname:</strong> Đậu, Nhím Lạc</p>
+          <p><strong>Sở thích:</strong> Ăn, chơi, ngủ, nghỉ, học</p>
+          <p><strong>Địa chỉ:</strong> ấp Bến Nò, xã Mỹ Hòa, huyện Ba Tri, tỉnh Bến Tre</p>
+          <p><strong>Số điện thoại:</strong> 0817994123</p>
+          <a href="https://www.facebook.com/lac.vienvinh.5" target="_blank">Trang cá nhân</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thẻ bài 2 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/1.png" alt="Ảnh Ngạn">
+        </div>
+        <div class="card-back">
+          <h3>Nguyễn Ngọc Ngạn</h3>
+          <p><strong>Nickname:</strong> Ngạn Nguyễn Tattoo</p>
+          <p><strong>Sở thích:</strong> Esports, Tattoo Xăm hình cho bạn</p>
+          <p><strong>Địa chỉ:</strong>219C, ấp Bình Thạnh, xã Bình Phú, TP Bến Tre, Bến Tre</p>
+          <p><strong>Số điện thoại:</strong>0946540907</p>
+          <a href="https://www.facebook.com/profile.php?id=100065761179305" target="_blank">Trang cá nhân</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thẻ bài 3 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/pv.jpg" alt="Ảnh Chou">
+        </div>
+        <div class="card-back">
+          <h3>Châu Phương Vy</h3>
+          <p><strong>Nickname:</strong>Chou</p>
+          <p><strong>Sở thích:</strong> Đọc sách</p>
+          <p><strong>Địa chỉ:</strong> phường Phú Tân, thành phố Bến Tre, tỉnh Bến Tre</p>
+          <p><strong>Số điện thoại:</strong> 0946717208</p>
+          <a href="https://www.facebook.com/share/15KnPTbybP/?mibextid=LQQJ4d" target="_blank">Trang cá nhân</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thẻ bài 4 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/mn.jpg" alt="Ảnh MN">
+        </div>
+        <div class="card-back">
+          <h3>Hàng Mẫn Nghi</h3>
+          <p><strong>Nickname:</strong> Nghi Hàng</p>
+          <p><strong>Sở thích:</strong>Xem phim</p>
+          <p><strong>Địa chỉ:</strong> Phường 8, thành phố Bến Tre, tỉnh Bến Tre</p>
+          <p><strong>Số điện thoại:</strong>0907142062</p>
+          <a href="https://www.facebook.com/share/18JdLVzr54/?mibextid=LQQJ4d" target="_blank">Trang cá nhân</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thẻ bài 5 -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/dh.jpg" alt="Ảnh DHg">
+        </div>
+        <div class="card-back">
+          <h3>Phan Ngọc Diễm Hương</h3>
+          <p><strong>Nickname:</strong>hg</p>
+          <p><strong>Sở thích:</strong> Xem Tiktok, đọc truyện, đu HĐD</p>
+          <p><strong>Địa chỉ:</strong> Phường 6, thành phố Bến Tre, tỉnh Bến Tre</p>
+          <p><strong>Số điện thoại:</strong>0365148838</p>
+          <a href="https://www.facebook.com/profile.php?id=100078229994900&mibextid=ZbWKwL" target="_blank">Trang cá nhân</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript để xử lý click lật thẻ
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const cardInner = card.querySelector('.card-inner');
+        cardInner.classList.toggle('is-flipped');
+      });
+    });
+  </script>
+</body>
+</html>
