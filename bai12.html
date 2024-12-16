@@ -104,6 +104,41 @@
             <button type="submit">Đăng Ký</button>
         </div>
     </form>
-
+    <br>
+    <br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quay về Trang Chủ</title>
+        <style>
+            /* Thêm một số kiểu cho nút */
+            .home-button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                float: right ;
+            }
+    
+            .home-button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <button class="home-button" onclick="goHome()">Quay về trang chủ</button>
+    
+        <script>
+            // Hàm JavaScript để chuyển hướng về trang chủ
+            function goHome() {
+                window.location.href = './test.html'; // Trang chủ, nếu bạn đang sử dụng một trang tĩnh, thay '/' bằng URL cụ thể
+            }
+        </script>
+    
+    </body>
 </body>
 </html>
