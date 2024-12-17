@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng điểm</title>
+</head>
+<body>
+    <div class="table">
+    <table style="border:3px solid">
+        <tr>
+        <th style="border:2px solid green" rowspan="2">Họ và tên</th> 
+        <th style="border:2px solid green" colspan="3">Điểm thi</th>
+        </tr>
+        <tr>
+        <td style="border:2px solid black; color:red">Toán</td> 
+        <td style="border:2px solid black; color:rgb(0, 180, 108)">Vật lí</td>
+        <td style="border:2px solid black; color: blue">Hóa học</td>
+         </tr>
+    </table>
+    </div>
+</body>
+<br>
+    <br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quay về Trang Chủ</title>
+        <style>
+            /* Thêm một số kiểu cho nút */
+            .home-button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                float: right ;
+            }
+    
+            .home-button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <button class="home-button" onclick="goHome()">Quay về trang chủ</button>
+    
+        <script>
+            // Hàm JavaScript để chuyển hướng về trang chủ
+            function goHome() {
+                window.location.href = './bai9.html'; // Trang chủ, nếu bạn đang sử dụng một trang tĩnh, thay '/' bằng URL cụ thể
+            }
+        </script>
+    
+    </body>
+</html>
