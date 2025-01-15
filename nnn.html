@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu Lạc Bộ Thể Thao và Nghệ Thuật</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #c5e8f7;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .intro, .sports, .art {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .intro div, .sports div, .art div {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #00d478;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="color:darkorange;"> Nguyễn Ngọc Ngạn </h1>
+        <p style=" color:darkorange;">  Vì sao tinh tú trên bầu trời rộng lớn </p>
+    </header>
+    <div class="container">
+        <section class="intro">
+            <div class="text">
+                <h2 >Thông tin</h2>
+                <p>
+                    Xin chào! Tôi là Nguyễn Ngọc Ngạn (Ngạn Tattoo), học sinh lớp chuyên Toán-Tin năm học 2022-2025. Tôi được bạn bè trong lớp biết đến với sự thân thiện, vui vẻ và hài hước. 
+                </p> 
+                <p>
+                    Ngoài công việc học tập, tôi cũng có những sở thích riêng, đặc biệt là bộ môn thể thao điện tử. Tôi thường chơi game cùng các bạn trong lớp sao những giờ học và những ngày chạy deadline mệt mỏi. Và đôi khi tôi cũng tặng bạn bè một vài hình xâm độc đáo.
+                </p>
+            </div>
+    <section class="intro">
+        <div class="card">
+            <h2 style="color:deeppink;"> Kĩ niệm cafe khối </h2>
+            <p>Buổi họp mặt giữa cựu học sinh và tân học sinh thật ý nghĩa, đầy cảm xúc. Chúng tôi chia sẻ kỷ niệm xưa và truyền cảm hứng cho các em. Không khí ấm áp, thân thiện giúp gắn kết các thế hệ, tạo động lực cho các em tiếp bước thành công.</p>
+        </div>
+        <div class="card">
+            <img src="./images/ảnh khối.jpg" alt="Câu lạc bộ Thể Thao">
+        </div>
+    </section>
+
+    <section class="sports">
+        <h2 style="color:deeppink;">Hậu trường cho văn nghệ Tết </h2>
+        <div>
+            <img src="./images/văn nghệ.jpg" alt="Hoạt động Thể Thao">
+        </div>
+        <div class="card">
+            <p>Khi cùng các bạn chuẩn bị đạo cụ và tập múa cho hội diễn văn nghệ Tết, tôi cảm thấy vô cùng háo hức và vui vẻ. Mặc dù công việc khá vất vả, nhưng không khí hợp tác và sự sáng tạo của cả nhóm khiến mọi thứ trở nên thú vị hơn. Chúng tôi cùng nhau chỉnh sửa từng bước nhảy, tạo ra những đạo cụ đẹp mắt, và mọi người đều đầy nhiệt huyết. Đặc biệt, niềm vui lan tỏa khi thấy mọi người gắn bó hơn, hỗ trợ nhau hết mình. Buổi tập không chỉ giúp tôi học hỏi thêm nhiều điều mà còn gắn kết tình bạn, tạo nên những kỷ niệm đáng nhớ trước thềm Tết.</p>
+        </div>
+    </section>
+
+    <section class="art">
+        <h2 style="color:deeppink;">Một số tác phẩm nghệ thuật của bản thân </h2>
+        <div class="card">
+            <p>Như đã nói, tôi có rất nhiều những tài lẻ và xâm hình là một trong số đó. Và đây có lẽ là một trong số những tác phẩm mà tôi tâm đắt nhất.</p>
+        </div>
+        <div>
+            <img src="./images/minh.jpg" alt="Hoạt động Nghệ Thuật">
+        </div>
+    </section>
+
+   
+
+</body>
+<br>
+    <br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quay về Trang Chủ</title>
+        <style>
+            /* Thêm một số kiểu cho nút */
+            .home-button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                float: right ;
+            }
+    
+            .home-button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <button class="home-button" onclick="goHome()">Quay về trang chủ</button>
+    
+        <script>
+            // Hàm JavaScript để chuyển hướng về trang chủ
+            function goHome() {
+                window.location.href = './tvnhom.html'; // Trang chủ, nếu bạn đang sử dụng một trang tĩnh, thay '/' bằng URL cụ thể
+            }
+        </script>
+    
+    </body>
+    
+
+</html>
